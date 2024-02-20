@@ -18,7 +18,10 @@
   "homepage": "hhttps://github.com/Workintech/FSWeb-S7G1-SPA-Routing#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
+    "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "react-bootstrap": "^2.10.1",
+    "react-router-dom": "^6.22.1"
   }
 }

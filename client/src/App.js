@@ -1,36 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import NavbarComponent from './components/navigationbar';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Movies from './components/MovieList'; 
+import Home from './components/Home';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 
-import KaydedilenlerListesi from './Filmler/KaydedilenlerListesi';
 
 export default function App () {
-  const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
-  const [movieList, setMovieList] = useState([]);
-
-  useEffect(() => {
-    const FilmleriAl = () => {
-      axios
-        .get('http://localhost:5001/api/filmler') // Burayı Postman'le çalışın
-        .then(response => {
-          // Bu kısmı log statementlarıyla çalışın
-          // ve burdan gelen response'u 'movieList' e aktarın
-        })
-        .catch(error => {
-          console.error('Sunucu Hatası', error);
-        });
-    }
-    FilmleriAl();
-  }, []);
-
-  const KaydedilenlerListesineEkle = id => {
-    // Burası esnek. Aynı filmin birden fazla kez "saved" e eklenmesini engelleyin
-  };
 
   return (
+    <Router>
     <div>
-      <KaydedilenlerListesi list={[ /* Burası esnek */]} />
-
-      <div>Bu Div'i kendi Routelarınızla değiştirin</div>
+      <NavbarComponent />      
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/movies" element={<Movies />} />
+      </Routes>
     </div>
+  </Router>
+
+
   );
 }
