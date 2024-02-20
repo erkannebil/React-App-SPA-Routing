@@ -78,3 +78,7 @@ Yapılacaklar;
 ek detay sayfası için 3 farklı component oluşturun.
 bu componentleri az da olsa stil ekleyin.
 bu componentlerin içini alakalı veriler ile (api üzerinden gelen) 4 tane field ekleyin 1 tanesi resim olmalı.
+
+![alt text](image-2.png)(main page router kısmı için eklendi bu sebeple boş)
+![alt text](image-1.png)
+![alt text](image.png)
