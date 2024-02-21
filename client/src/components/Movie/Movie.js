@@ -1,8 +1,6 @@
 import React from "react";
 import "./Movie.css";
 
-
-
 const Movie = (props) => {
     const { original_title, overview, poster_path } = props
 
