@@ -14,6 +14,8 @@ const Navigationbar = () => {
           <Nav className="me-auto">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/movies"> Movies</Nav.Link>
+            <Nav.Link href="/person"> Person</Nav.Link>
+            <Nav.Link href="/tv"> Tv</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
